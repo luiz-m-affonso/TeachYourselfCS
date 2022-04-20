@@ -22,3 +22,15 @@ def max_profit(prices)
   end
   max_profit
 end
+
+def max_profit(prices)
+  money = 0
+
+  prices.each_with_index do |price, i|
+    if prices[i + 1] && price < prices[i + 1]
+        money += (prices[i + 1] - price)
+    end
+  end
+
+  money
+end
