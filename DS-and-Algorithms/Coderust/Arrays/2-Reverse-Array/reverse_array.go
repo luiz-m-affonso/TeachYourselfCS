@@ -23,7 +23,7 @@ func RotateArray(nums []int, n int) []int{
 	if n < 0 {
 		n = n + length
 	}
-	
+
 	// reversing the whole array
 	ReverseArray(nums, 0, length-1)
 	// fixing the order of the rotated n elements
